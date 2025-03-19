@@ -5,7 +5,7 @@ class Database:
         self.conn = pymysql.connect(
             host="localhost",
             user="root",
-            password=input("Enter your password here"), #password to access the database
+            password=input("Enter your password here"), #password to access the database or can also create .env file
             database="billing_db"
         )
         self.cursor = self.conn.cursor()
